@@ -1,0 +1,12 @@
+ 
+//人物等级配置提供器
+class PlayerDataAccessor : public lib::memory::Object
+{
+public:
+	PlayerDataAccessor();
+	~PlayerDataAccessor();
+
+	const CFPlayerLevel* getLevel(int level) const ;
+
+	bool loadConfig();
+};

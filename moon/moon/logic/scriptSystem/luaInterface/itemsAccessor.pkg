@@ -1,0 +1,15 @@
+ /*
+ *读取物品表接口，其中场景表和使用条件等相关连的配置表，最终读取时，赋值给CStdItem
+ * */
+class ItemAccessor : public Object
+{
+public:		
+	ItemAccessor();
+	~ItemAccessor();
+
+	//获取一个物品的配置
+	const CFItem* getItem(uint32 itemId) const;
+	//获取一个物品配置（by name）
+	const CFItem* getItemByName(const char*  sName) const;
+};
+ 

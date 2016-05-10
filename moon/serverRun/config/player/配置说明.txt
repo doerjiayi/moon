@@ -1,0 +1,4 @@
+LevelConfig.csv		角色等级信息配置，目前仅包含升级各等级升级所需经验配置值
+Job1LevelAttr.csv	剑士各等级基本属性配置
+Job2LevelAttr.csv	狂刀各等级基本属性配置
+Job3LevelAttr.csv	刺客各等级基本属性配置

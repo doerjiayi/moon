@@ -1,0 +1,244 @@
+﻿Build started 2013/8/10 22:27:49.
+     1>Project "M:\moon\moon\iocpExample2.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\moon.unsuccessfulbuild".
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D X64 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _WINDOWS /D _UTFSTR /D _MAPNEW /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt accessor\itemsAccessor.cpp accessor\monsterAccessor.cpp accessor\playerDataAccessor.cpp accessor\sceneAccessor.cpp accessor\skillAccessor.cpp accessor\weaponAccessor.cpp common\ShareUtil.cpp common\Tick.cpp config\configManager.cpp config\questManager.cpp dbClient\account\AccountManager.cpp dbClient\dbm\DBManager.cpp dbClient\gameLog\gameLogMr.cpp lib\algorithm\randValue.cpp lib\container\EventDispatcher.cpp lib\container\overdue\mnString.cpp lib\container\stream\BaseStream.cpp lib\container\stream\FileStream.cpp lib\container\stream\HandleStream.cpp lib\container\stream\MemoryStream.cpp lib\container\string\AnsiString.cpp lib\container\string\StringConvert.cpp lib\container\WinIconv.cpp lib\lock\rwLock.cpp lib\luaLib\luaConfig.cpp lib\luaLib\luaScript.cpp lib\mysql\MySQLConnection.cpp lib\thread\Thread.cpp lib\time\MiniDateTime.cpp logic\doer\doer.cpp logic\doer\Entity.cpp logic\doer\Npc.cpp logic\doer\Player.cpp logic\doer\playerData.cpp logic\doer\PlayerList.cpp logic\engine\logicEngine\LogicEngine.cpp logic\engine\monsterEngine\MonsterEngine.cpp logic\event\logicEventDispatcher.cpp logic\map\CMapGrid.cpp logic\map\GridItem.cpp logic\map\mapManager.cpp logic\map\SceneFile.cpp logic\memory\GlobalObjAlloc.cpp logic\scriptSystem\scriptSystem.cpp logic\scriptSystem\scriptValue.cpp logic\server\logicServer.cpp logic\units\command\gameCommander.cpp logic\units\doerUnit\doerBattleDeal.cpp logic\units\doerUnit\doerAbilData.cpp logic\units\doerUnit\doerAbility.cpp logic\units\doerUnit\doerBattle.cpp logic\units\doerUnit\doerBattleAI.cpp logic\units\doerUnit\doerUnit.cpp logic\units\doerUnit\doerBag.cpp logic\units\doerUnit\doerChat.cpp logic\units\doerUnit\doerEquip.cpp logic\units\doerUnit\doerNpcTalk.cpp logic\units\doerUnit\doerQuest.cpp logic\units\doerUnit\doerTeam.cpp logic\units\doerUnit\doerWeapon.cpp logic\units\skill\skillFunc.cpp logic\units\skill\skillUtil.cpp logic\units\team\Team.cpp logic\units\team\TeamManager.cpp main.cpp misc\outPutMsg.cpp net\netGate\base\baseReactor.cpp net\netGate\dataProcess\ExecSockDataMgr.cpp net\netGate\dataProcess\ExecSockMgr.cpp net\netGate\GateManager.cpp net\netGate\GateSynergy.cpp net\netGate\linux\epoll\epollReactor.cpp net\netGate\LogicGate.cpp net\netGate\select\selectReactor.cpp net\netGate\select\SelectSockProcess.cpp net\netGate\select\selectTest.cpp net\netGate\win\iocp\iocpReactor.cpp net\netGate\win\iocp\testIocp.cpp net\netGate\win\wsa\wsa.cpp net\socket\base\CustomClientSocket.cpp net\socket\base\CustomServerClientSocket.cpp net\socket\base\CustomServerSocket.cpp net\socket\base\CustomSocket.cpp net\socket\base\CustomWorkSocket.cpp net\socket\base\SendPackPool.cpp net\socket\CustomSSTClientSocket.cpp net\socket\CustomSSTServerClientSocket.cpp os\os.cpp StdAfx.cpp
+         StdAfx.cpp
+         os.cpp
+         CustomSSTServerClientSocket.cpp
+         CustomSSTClientSocket.cpp
+         SendPackPool.cpp
+         CustomWorkSocket.cpp
+         CustomSocket.cpp
+         CustomServerSocket.cpp
+         CustomServerClientSocket.cpp
+         CustomClientSocket.cpp
+         wsa.cpp
+         testIocp.cpp
+         iocpReactor.cpp
+         selectTest.cpp
+         SelectSockProcess.cpp
+         selectReactor.cpp
+         LogicGate.cpp
+         net\netGate\LogicGate.cpp(396) : TODO: miros : 需要实现将在线的同一账号顶掉
+         epollReactor.cpp
+         GateSynergy.cpp
+         GateManager.cpp
+         Generating Code...
+         Compiling...
+         ExecSockMgr.cpp
+         ExecSockDataMgr.cpp
+         baseReactor.cpp
+         outPutMsg.cpp
+         main.cpp
+         TeamManager.cpp
+         Team.cpp
+         skillUtil.cpp
+         skillFunc.cpp
+         doerWeapon.cpp
+         doerTeam.cpp
+         doerQuest.cpp
+         logic\units\doerUnit\doerQuest.cpp(225) : TODO: ray: 需加上身上可判断的任务目标如背包中有的道具数量
+         logic\units\doerUnit\doerQuest.cpp(378) : TODO: ray: 要保存的任务目标类型未完全确认
+         logic\units\doerUnit\doerQuest.cpp(533) : TODO: ray: 任务可接限制待完善
+         logic\units\doerUnit\doerQuest.cpp(633) : TODO: ray: 背包能否放入该奖励的判断
+         logic\units\doerUnit\doerQuest.cpp(647) : TODO: ray: 交任务删除道具
+         doerNpcTalk.cpp
+         doerEquip.cpp
+         logic\units\doerUnit\doerEquip.cpp(203) : TODO: miros : 记录穿装备日志
+         logic\units\doerUnit\doerEquip.cpp(227) : TODO: miros : 记录脱装备日志
+         doerChat.cpp
+         doerBag.cpp
+         logic\units\doerUnit\doerBag.cpp(159) : TODO: miros : 记录获得物品日志！
+         logic\units\doerUnit\doerBag.cpp(184) : TODO: miros : 记录获得物品日志！
+         logic\units\doerUnit\doerBag.cpp(213) : TODO: miros : 记录删除物品日志！
+         logic\units\doerUnit\doerBag.cpp(214) : TODO: miros : 使用EventDispatcher分派删除物品事件
+         logic\units\doerUnit\doerBag.cpp(222) : TODO: miros : 记录删除物品日志！
+         logic\units\doerUnit\doerBag.cpp(223) : TODO: miros : 使用EventDispatcher分派删除物品事件
+         logic\units\doerUnit\doerBag.cpp(243) : TODO: miros : 记录获得物品日志
+         logic\units\doerUnit\doerBag.cpp(252) : TODO: miros : 记录删除物品日志
+         doerUnit.cpp
+         doerBattleAI.cpp
+         doerBattle.cpp
+         doerAbility.cpp
+         Generating Code...
+         Compiling...
+         doerAbilData.cpp
+         doerBattleDeal.cpp
+         logic\units\doerUnit\doerBattleDeal.cpp(301) : TODO: miros : 效验移动速度值是否合法.........................
+         gameCommander.cpp
+         logicServer.cpp
+         scriptValue.cpp
+         scriptSystem.cpp
+         GlobalObjAlloc.cpp
+         SceneFile.cpp
+         mapManager.cpp
+     1>logic\map\mapManager.cpp(125): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+     1>logic\map\mapManager.cpp(318): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>logic\map\mapManager.cpp(321): warning C4244: 'argument' : conversion from '__int64' to 'unsigned int', possible loss of data
+         GridItem.cpp
+         CMapGrid.cpp
+         logicEventDispatcher.cpp
+         MonsterEngine.cpp
+         LogicEngine.cpp
+         logic\engine\logicEngine\LogicEngine.cpp(220) : TODO: miros : 通过用户句柄关闭网关连接
+         PlayerList.cpp
+         playerData.cpp
+         Player.cpp
+     1>logic\doer\Player.cpp(427): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+         Npc.cpp
+         Entity.cpp
+         doer.cpp
+     1>logic\doer\doer.cpp(108): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'INT_PTR', possible loss of data
+         Generating Code...
+         Compiling...
+         MiniDateTime.cpp
+         Thread.cpp
+         MySQLConnection.cpp
+         luaScript.cpp
+         luaConfig.cpp
+         rwLock.cpp
+         WinIconv.cpp
+         StringConvert.cpp
+         AnsiString.cpp
+         MemoryStream.cpp
+     1>lib\container\stream\MemoryStream.cpp(3): warning C4627: '#include "stream.h"': skipped when looking for precompiled header use
+                 Add directive to 'StdAfx.h' or rebuild precompiled header
+         HandleStream.cpp
+         FileStream.cpp
+         BaseStream.cpp
+         mnString.cpp
+         EventDispatcher.cpp
+         randValue.cpp
+         gameLogMr.cpp
+         dbClient\gameLog\gameLogMr.cpp(188) : TODO: miros : 需要根据消息体来添加具体消息的sql语句
+         DBManager.cpp
+         AccountManager.cpp
+         questManager.cpp
+         Generating Code...
+         Compiling...
+         configManager.cpp
+         Tick.cpp
+         ShareUtil.cpp
+         weaponAccessor.cpp
+         skillAccessor.cpp
+         sceneAccessor.cpp
+         playerDataAccessor.cpp
+         monsterAccessor.cpp
+         itemsAccessor.cpp
+     1>accessor\itemsAccessor.cpp(450): warning C4018: '>=' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\moon\moon\Debug\moon.exe" /NOLOGO /LIBPATH:../libs zlib.lib lua51.lib mysqlclient.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTD.lib /MANIFEST /ManifestFile:"Debug\moon.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"M:\moon\moon\Debug\moon.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\moon\moon\Debug\moon.lib" /MACHINE:X86 Debug\itemsAccessor.obj
+         Debug\monsterAccessor.obj
+         Debug\playerDataAccessor.obj
+         Debug\sceneAccessor.obj
+         Debug\skillAccessor.obj
+         Debug\weaponAccessor.obj
+         Debug\ShareUtil.obj
+         Debug\Tick.obj
+         Debug\configManager.obj
+         Debug\questManager.obj
+         Debug\AccountManager.obj
+         Debug\DBManager.obj
+         Debug\gameLogMr.obj
+         Debug\randValue.obj
+         Debug\EventDispatcher.obj
+         Debug\mnString.obj
+         Debug\BaseStream.obj
+         Debug\FileStream.obj
+         Debug\HandleStream.obj
+         Debug\MemoryStream.obj
+         Debug\AnsiString.obj
+         Debug\StringConvert.obj
+         Debug\WinIconv.obj
+         Debug\rwLock.obj
+         Debug\luaConfig.obj
+         Debug\luaScript.obj
+         Debug\MySQLConnection.obj
+         Debug\Thread.obj
+         Debug\MiniDateTime.obj
+         Debug\doer.obj
+         Debug\Entity.obj
+         Debug\Npc.obj
+         Debug\Player.obj
+         Debug\playerData.obj
+         Debug\PlayerList.obj
+         Debug\LogicEngine.obj
+         Debug\MonsterEngine.obj
+         Debug\logicEventDispatcher.obj
+         Debug\CMapGrid.obj
+         Debug\GridItem.obj
+         Debug\mapManager.obj
+         Debug\SceneFile.obj
+         Debug\GlobalObjAlloc.obj
+         Debug\scriptSystem.obj
+         Debug\scriptValue.obj
+         Debug\logicServer.obj
+         Debug\gameCommander.obj
+         Debug\doerBattleDeal.obj
+         Debug\doerAbilData.obj
+         Debug\doerAbility.obj
+         Debug\doerBattle.obj
+         Debug\doerBattleAI.obj
+         Debug\doerUnit.obj
+         Debug\doerBag.obj
+         Debug\doerChat.obj
+         Debug\doerEquip.obj
+         Debug\doerNpcTalk.obj
+         Debug\doerQuest.obj
+         Debug\doerTeam.obj
+         Debug\doerWeapon.obj
+         Debug\skillFunc.obj
+         Debug\skillUtil.obj
+         Debug\Team.obj
+         Debug\TeamManager.obj
+         Debug\main.obj
+         Debug\outPutMsg.obj
+         Debug\baseReactor.obj
+         Debug\ExecSockDataMgr.obj
+         Debug\ExecSockMgr.obj
+         Debug\GateManager.obj
+         Debug\GateSynergy.obj
+         Debug\epollReactor.obj
+         Debug\LogicGate.obj
+         Debug\selectReactor.obj
+         Debug\SelectSockProcess.obj
+         Debug\selectTest.obj
+         Debug\iocpReactor.obj
+         Debug\testIocp.obj
+         Debug\wsa.obj
+         Debug\CustomClientSocket.obj
+         Debug\CustomServerClientSocket.obj
+         Debug\CustomServerSocket.obj
+         Debug\CustomSocket.obj
+         Debug\CustomWorkSocket.obj
+         Debug\SendPackPool.obj
+         Debug\CustomSSTClientSocket.obj
+         Debug\CustomSSTServerClientSocket.obj
+         Debug\os.obj
+         Debug\StdAfx.obj
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_server_init@12 referenced in function "public: __thiscall CMySQLConenction::CMySQLConenction(void)" (??0CMySQLConenction@@QAE@XZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_server_end@0 referenced in function "public: __thiscall CMySQLConenction::~CMySQLConenction(void)" (??1CMySQLConenction@@QAE@XZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_close@4 referenced in function "public: int __thiscall CMySQLConenction::Connect(void)" (?Connect@CMySQLConenction@@QAEHXZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_error@4 referenced in function "public: int __thiscall CMySQLConenction::Connect(void)" (?Connect@CMySQLConenction@@QAEHXZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_real_connect@32 referenced in function "public: int __thiscall CMySQLConenction::Connect(void)" (?Connect@CMySQLConenction@@QAEHXZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_init@4 referenced in function "public: int __thiscall CMySQLConenction::Connect(void)" (?Connect@CMySQLConenction@@QAEHXZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_fetch_row@4 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_num_fields@4 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_num_rows@4 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_field_seek@8 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_data_seek@12 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_store_result@4 referenced in function "private: void __thiscall CMySQLConenction::AfterQueryed(int)" (?AfterQueryed@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_affected_rows@4 referenced in function "private: void __thiscall CMySQLConenction::AfterExeced(int)" (?AfterExeced@CMySQLConenction@@AAEXH@Z)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_real_query@12 referenced in function "public: int __cdecl CMySQLConenction::Query(char const *,...)" (?Query@CMySQLConenction@@QAAHPBDZZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_next_result@4 referenced in function "public: void __thiscall CMySQLConenction::ResetQuery(void)" (?ResetQuery@CMySQLConenction@@QAEXXZ)
+     1>MySQLConnection.obj : error LNK2019: unresolved external symbol _mysql_free_result@4 referenced in function "public: void __thiscall CMySQLConenction::ResetQuery(void)" (?ResetQuery@CMySQLConenction@@QAEXXZ)
+     1>scriptSystem.obj : error LNK2019: unresolved external symbol _tolua_pushusertype referenced in function "public: virtual bool __thiscall ScriptSystem::exec(char const *,class ScriptValueList const *,class ScriptValueList *)" (?exec@ScriptSystem@@UAE_NPBDPBVScriptValueList@@PAV2@@Z)
+     1>M:\moon\moon\Debug\moon.exe : fatal error LNK1120: 17 unresolved externals
+     1>Done Building Project "M:\moon\moon\iocpExample2.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.74

@@ -1,0 +1,25 @@
+ 
+/************************************************************************/
+/* 玩家组队模块                                                         */
+/************************************************************************/
+
+class CTeam;
+
+class CPlayerTeam 
+	:public CDoerUnit
+{
+public:
+	CPlayerTeam();
+	~CPlayerTeam();
+
+	//初始化
+	virtual bool init();
+	//收到的消息分派
+	virtual void dispatchRecvPacket(int btCmd, CDataPacketReader &inPacket);
+
+
+public:
+	CTeam*		m_pTeam;
+};
+
+ 

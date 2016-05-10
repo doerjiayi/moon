@@ -1,0 +1,30 @@
+DBConfig = 
+{
+	--服务器名称
+	serverName = "moon db",
+	--是否允许创建角色
+	enableNewChar = true,
+	--数据服务配置
+	dataServer = 
+	{
+		--[[address=服务监听地址，port=服务监听端口]]
+		address = "0.0.0.0", port = 6100,
+	},
+	--MySQL数据库连接配置
+	sqlClient = 
+	{
+		host = "127.0.0.1", port = 3306, dbname = "moondb", user = "dbmaster", passwd = "1q2w3e",
+	},
+	--本地数据库存储配置
+	localDB = 
+	{
+		--数据库存储目录
+		path = "./FDB", 
+		--数据库备份目录
+		backupPath = "./BACKUP",
+		--数据库备份周期(单位为分钟)
+		backupInterval = 60,
+		--数据库备份文件保留时间(单位为小时)，超过指定时间的备份文件将被自动删除
+		backupDuration = 48,
+	},
+}

@@ -1,0 +1,11 @@
+场景表说明:
+字段名					字段说明
+
+NPCID					npc id
+场景ID					npc 所在场景id
+名称					npc 名称
+外形					npc 外形
+坐标X					npc 坐标X
+坐标Y					npc 坐标y
+脚本					npc 脚本名
+

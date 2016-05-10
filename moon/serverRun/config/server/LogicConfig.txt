@@ -1,0 +1,11 @@
+logicDataConfig = 
+{
+	birthScene = 
+	{
+		sceneId = 1, minX = 500, maxX = 510,minY = 200 ,maxY = 210,
+	},
+	urgentScene = 
+	{
+		sceneId = 1, minX = 500, maxX = 510,minY = 200 ,maxY = 210,
+	},
+}

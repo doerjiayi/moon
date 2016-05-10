@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DBEngine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="gameDb\LocalDB.cpp">
+      <Filter>gameDb</Filter>
+    </ClCompile>
+    <ClCompile Include="gameDb\SQLDB.cpp">
+      <Filter>gameDb</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipBackup.cpp" />
+    <ClCompile Include="DBDataServer.cpp" />
+    <ClCompile Include="DBDataClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBEngine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="gameDb\GameDataBufferPool.hpp">
+      <Filter>gameDb</Filter>
+    </ClInclude>
+    <ClInclude Include="gameDb\LocalDB.h">
+      <Filter>gameDb</Filter>
+    </ClInclude>
+    <ClInclude Include="gameDb\LocalDBType.hpp">
+      <Filter>gameDb</Filter>
+    </ClInclude>
+    <ClInclude Include="gameDb\SQLDB.h">
+      <Filter>gameDb</Filter>
+    </ClInclude>
+    <ClInclude Include="DBProto.h" />
+    <ClInclude Include="ZipBackup.h" />
+    <ClInclude Include="DBDataServer.h" />
+    <ClInclude Include="DBDataClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gameDb">
+      <UniqueIdentifier>{4ad648d4-e253-423c-946f-519e8f22959c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

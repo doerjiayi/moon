@@ -1,0 +1,65 @@
+ 
+/***************************************
+* 玩家任务模块
+***************************************/
+
+
+class CPlayerQuest: public CDoerUnit
+{
+public:
+	CPlayerQuest();
+	~CPlayerQuest();
+
+	//初始化
+	virtual bool init();
+	//加载任务数据
+	virtual bool loadData(CDataPacketReader &data);
+	//保存任务数据
+	virtual void saveData(CDataPacket& data);
+	//收到的消息分派
+	virtual void dispatchRecvPacket(int btCmd, CDataPacketReader &inPacket);
+
+	//发送任务列表到客户端
+	void sendQuestDatas();
+	//发送添加已接任务
+	void sendAddAcceptQuest(PlayerQuestData* pQuestData);
+	//发送添加可接任务
+	void sendAddCanAcceptQuest(unsigned short questID);
+	//发送更新任务状态
+	void sendUpdateAcceptQuest(unsigned short questID, unsigned char idx, unsigned char count);
+	//发送删除已接任务
+	void sendDelAcceptQuest(unsigned short questID);
+	//发送删除可接任务
+	void sendDelCanAcceptQuest(unsigned short questID);
+
+	//判断能否接任务
+	bool checkCanAccept(unsigned short);
+	//判断能否交该任务
+	bool checkCanSubmit(unsigned short);
+	//接任务
+	void acceptQuest(unsigned short);
+	//交任务
+	void submitQuest(unsigned short);
+	//检查某个NPC上的任务状态
+	int getNpcQuestState(unsigned long long npcId);
+	//更新任务目标进度
+	void updateQuestTarget(int questID, int tarIdx, int tarAddCount);
+
+	//通用事件处理
+	void questNormalHandler(const int id, int nCount, QuestConfig::ENUM_QUEST_TARGET type);
+
+	//获得道具事件处理
+	static void addItem(LogicEvent* event);
+	//删除道具事件处理
+	static void delItem(LogicEvent* event);
+	//死亡事件
+	static void actorDie(LogicEvent* event);
+
+	//GM命令:清除所有任务
+	void clearAllQuest();
+	//GM命令:接受任务
+	void addQuest(unsigned short questID);
+};
+
+
+#endif

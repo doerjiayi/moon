@@ -1,0 +1,16 @@
+
+使用步骤：
+1、把tolua++.exe(在tolua++-1.0.93.rar中) 添加到环境变量path中
+2、复制头文件到文件夹pack(若新加头文件，否则就直接修改对应pkg文件)
+3、把头文件拓展名改为pkg
+4、去掉宏和 typedef、 inline 关键字
+5、去掉函数的函数体（若有函数体）
+6、去掉非公开的成员变量和成员函数,去掉联合体,去掉static 变量,去掉容器成员 ,去掉操作符重载函数,去掉using namespace;
+7、在汇总文件(如serverInterface.pkg)加入这个新加的文件，格式如$pfile "Player.pkg"
+8、在命令行执行导出代码（如tolua++ -o ServerInterface.cpp ServerInterface.pkg）
+9、把ServerInterface.cpp复制到项目中的文件夹LuaInteract下
+
+
+注意：
+不支持容器
+#pragma pack (push, 1) 等可以保留

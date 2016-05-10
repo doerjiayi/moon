@@ -1,0 +1,15 @@
+ 
+//using namespace lib::container;
+
+//武器配置数据提供器
+class WeaponAccessor : public lib::memory::Object
+{
+public:
+	WeaponAccessor();
+	~WeaponAccessor();
+
+	const CFBead* getBeadById(uint32 id) const;
+	const CFWeapon* getWeaponById(uint8 id) const;
+	const StdBeadQuality* getBeadQuality(uint8 quality) const;
+};
+

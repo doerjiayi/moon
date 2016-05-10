@@ -1,0 +1,280 @@
+﻿Build started 2013/9/23 11:08:14.
+     1>Project "H:\moonProject\moon\moon\iocpExample2.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Touching "x64\Debug\moon.unsuccessfulbuild".
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"../3party/mysql-5.2/x64" /I../3party/tolua++/src /I../3party/lua51/src /I../3party/zlib/src /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Debug\moon.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /wd4099 /errorReport:prompt StdAfx.cpp accessor\itemsAccessor.cpp accessor\monsterAccessor.cpp accessor\playerDataAccessor.cpp accessor\sceneAccessor.cpp accessor\skillAccessor.cpp accessor\weaponAccessor.cpp config\configManager.cpp config\questManager.cpp dbClient\account\AccountManager.cpp dbClient\dbm\DBManager.cpp dbClient\gameLog\gameLogMr.cpp logic\doer\Entity.cpp logic\doer\Npc.cpp logic\doer\Player.cpp logic\doer\PlayerList.cpp logic\doer\doer.cpp logic\doer\playerData.cpp logic\engine\logicEngine\LogicEngine.cpp logic\engine\monsterEngine\MonsterEngine.cpp logic\event\logicEventDispatcher.cpp logic\map\CMapGrid.cpp logic\map\GridItem.cpp logic\map\SceneFile.cpp logic\map\mapManager.cpp logic\memory\GlobalObjAlloc.cpp logic\scriptSystem\scriptSystem.cpp logic\scriptSystem\scriptValue.cpp logic\server\logicServer.cpp logic\units\command\gameCommander.cpp logic\units\doerUnit\doerAbilData.cpp logic\units\doerUnit\doerAbility.cpp logic\units\doerUnit\doerBag.cpp logic\units\doerUnit\doerBattle.cpp logic\units\doerUnit\doerBattleAI.cpp logic\units\doerUnit\doerBattleDeal.cpp logic\units\doerUnit\doerChat.cpp logic\units\doerUnit\doerEquip.cpp logic\units\doerUnit\doerNpcTalk.cpp logic\units\doerUnit\doerQuest.cpp logic\units\doerUnit\doerTeam.cpp logic\units\doerUnit\doerUnit.cpp logic\units\doerUnit\doerWeapon.cpp logic\units\skill\skillFunc.cpp logic\units\skill\skillUtil.cpp logic\units\team\Team.cpp logic\units\team\TeamManager.cpp main.cpp net\netGate\GateManager.cpp net\netGate\GateSynergy.cpp net\netGate\LogicGate.cpp net\netGate\base\baseReactor.cpp net\netGate\dataProcess\ExecSockDataMgr.cpp net\netGate\dataProcess\ExecSockMgr.cpp net\netGate\linux\epoll\epollReactor.cpp net\netGate\select\SelectSockProcess.cpp net\netGate\select\selectTest.cpp
+         StdAfx.cpp
+         itemsAccessor.cpp
+         monsterAccessor.cpp
+         playerDataAccessor.cpp
+         sceneAccessor.cpp
+         skillAccessor.cpp
+         weaponAccessor.cpp
+         configManager.cpp
+         questManager.cpp
+         AccountManager.cpp
+         DBManager.cpp
+         gameLogMr.cpp
+         dbClient\gameLog\gameLogMr.cpp(188) : TODO: miros : 需要根据消息体来添加具体消息的sql语句
+         Entity.cpp
+         Npc.cpp
+         Player.cpp
+         PlayerList.cpp
+         doer.cpp
+         playerData.cpp
+         LogicEngine.cpp
+         logic\engine\logicEngine\LogicEngine.cpp(220) : TODO: miros : 通过用户句柄关闭网关连接
+         MonsterEngine.cpp
+         logicEventDispatcher.cpp
+         CMapGrid.cpp
+         GridItem.cpp
+         SceneFile.cpp
+         mapManager.cpp
+         GlobalObjAlloc.cpp
+         scriptSystem.cpp
+         scriptValue.cpp
+         logicServer.cpp
+         gameCommander.cpp
+         doerAbilData.cpp
+         doerAbility.cpp
+         doerBag.cpp
+         logic\units\doerUnit\doerBag.cpp(159) : TODO: miros : 记录获得物品日志！
+         logic\units\doerUnit\doerBag.cpp(184) : TODO: miros : 记录获得物品日志！
+         logic\units\doerUnit\doerBag.cpp(213) : TODO: miros : 记录删除物品日志！
+         logic\units\doerUnit\doerBag.cpp(214) : TODO: miros : 使用EventDispatcher分派删除物品事件
+         logic\units\doerUnit\doerBag.cpp(222) : TODO: miros : 记录删除物品日志！
+         logic\units\doerUnit\doerBag.cpp(223) : TODO: miros : 使用EventDispatcher分派删除物品事件
+         logic\units\doerUnit\doerBag.cpp(243) : TODO: miros : 记录获得物品日志
+         logic\units\doerUnit\doerBag.cpp(252) : TODO: miros : 记录删除物品日志
+         doerBattle.cpp
+         doerBattleAI.cpp
+         doerBattleDeal.cpp
+         logic\units\doerUnit\doerBattleDeal.cpp(301) : TODO: miros : 效验移动速度值是否合法.........................
+         doerChat.cpp
+         doerEquip.cpp
+         logic\units\doerUnit\doerEquip.cpp(203) : TODO: miros : 记录穿装备日志
+         logic\units\doerUnit\doerEquip.cpp(227) : TODO: miros : 记录脱装备日志
+         doerNpcTalk.cpp
+         doerQuest.cpp
+         logic\units\doerUnit\doerQuest.cpp(225) : TODO: ray: 需加上身上可判断的任务目标如背包中有的道具数量
+         logic\units\doerUnit\doerQuest.cpp(378) : TODO: ray: 要保存的任务目标类型未完全确认
+         logic\units\doerUnit\doerQuest.cpp(533) : TODO: ray: 任务可接限制待完善
+         logic\units\doerUnit\doerQuest.cpp(633) : TODO: ray: 背包能否放入该奖励的判断
+         logic\units\doerUnit\doerQuest.cpp(647) : TODO: ray: 交任务删除道具
+         doerTeam.cpp
+         doerUnit.cpp
+         doerWeapon.cpp
+         skillFunc.cpp
+         skillUtil.cpp
+         Team.cpp
+         TeamManager.cpp
+         main.cpp
+         GateManager.cpp
+         GateSynergy.cpp
+         LogicGate.cpp
+         net\netGate\LogicGate.cpp(396) : TODO: miros : 需要实现将在线的同一账号顶掉
+         baseReactor.cpp
+         ExecSockDataMgr.cpp
+         ExecSockMgr.cpp
+         epollReactor.cpp
+         SelectSockProcess.cpp
+         selectTest.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"../serverRun\moon.exe" /NOLOGO lua51.lib tolua++.lib zlib.lib mysqlclient.lib moonLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTD /NODEFAULTLIB:libcmt.lib /MANIFEST /ManifestFile:"x64\Debug\moon.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\moonProject\moon\serverRun\moon.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../serverRun\moon.lib" /MACHINE:X64 x64\Debug\itemsAccessor.obj
+         x64\Debug\monsterAccessor.obj
+         x64\Debug\playerDataAccessor.obj
+         x64\Debug\sceneAccessor.obj
+         x64\Debug\skillAccessor.obj
+         x64\Debug\weaponAccessor.obj
+         x64\Debug\configManager.obj
+         x64\Debug\questManager.obj
+         x64\Debug\AccountManager.obj
+         x64\Debug\DBManager.obj
+         x64\Debug\gameLogMr.obj
+         x64\Debug\doer.obj
+         x64\Debug\Entity.obj
+         x64\Debug\Npc.obj
+         x64\Debug\Player.obj
+         x64\Debug\playerData.obj
+         x64\Debug\PlayerList.obj
+         x64\Debug\LogicEngine.obj
+         x64\Debug\MonsterEngine.obj
+         x64\Debug\logicEventDispatcher.obj
+         x64\Debug\CMapGrid.obj
+         x64\Debug\GridItem.obj
+         x64\Debug\mapManager.obj
+         x64\Debug\SceneFile.obj
+         x64\Debug\GlobalObjAlloc.obj
+         x64\Debug\scriptSystem.obj
+         x64\Debug\scriptValue.obj
+         x64\Debug\logicServer.obj
+         x64\Debug\gameCommander.obj
+         x64\Debug\doerBattleDeal.obj
+         x64\Debug\doerAbilData.obj
+         x64\Debug\doerAbility.obj
+         x64\Debug\doerBattle.obj
+         x64\Debug\doerBattleAI.obj
+         x64\Debug\doerUnit.obj
+         x64\Debug\doerBag.obj
+         x64\Debug\doerChat.obj
+         x64\Debug\doerEquip.obj
+         x64\Debug\doerNpcTalk.obj
+         x64\Debug\doerQuest.obj
+         x64\Debug\doerTeam.obj
+         x64\Debug\doerWeapon.obj
+         x64\Debug\skillFunc.obj
+         x64\Debug\skillUtil.obj
+         x64\Debug\Team.obj
+         x64\Debug\TeamManager.obj
+         x64\Debug\main.obj
+         x64\Debug\baseReactor.obj
+         x64\Debug\ExecSockDataMgr.obj
+         x64\Debug\ExecSockMgr.obj
+         x64\Debug\GateManager.obj
+         x64\Debug\GateSynergy.obj
+         x64\Debug\epollReactor.obj
+         x64\Debug\LogicGate.obj
+         x64\Debug\selectReactor.obj
+         x64\Debug\SelectSockProcess.obj
+         x64\Debug\selectTest.obj
+         x64\Debug\iocpReactor.obj
+         x64\Debug\testIocp.obj
+         x64\Debug\wsa.obj
+         x64\Debug\StdAfx.obj
+     1>mysqlclient.lib(client.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(client.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(errmsg.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(errmsg.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(libmysql.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(libmysql.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_time.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_time.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(net_serv.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(net_serv.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(pack.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(pack.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(password.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(password.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(compress.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(compress.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(crc32.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(crc32.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(deflate.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(deflate.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(trees.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(trees.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(aes.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(aes.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(aestables.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(aestables.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(algebra.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(algebra.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(arc4.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(arc4.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(asn.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(asn.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(coding.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(coding.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(des.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(des.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(dh.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(dh.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(dsa.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(dsa.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(file.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(file.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(hash.cpp.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(hash.cpp.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(integer.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(integer.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(md2.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(md2.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(md4.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(md4.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(md5.cpp.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(md5.cpp.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(misc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(misc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(random.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(random.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ripemd.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ripemd.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(rsa.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(rsa.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(sha.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(sha.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(buffer.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(buffer.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(cert_wrapper.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(cert_wrapper.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(crypto_wrapper.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(crypto_wrapper.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(handshake.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(handshake.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(log.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(log.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(socket_wrapper.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(socket_wrapper.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ssl.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ssl.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(timer.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(timer.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(yassl_error.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(yassl_error.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(yassl_imp.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(yassl_imp.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(yassl_int.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(yassl_int.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(array.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(array.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(charset-def.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(charset-def.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(charset.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(charset.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(default.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(default.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(errors.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(errors.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(list.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(list.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_dirname.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_dirname.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_fn_ext.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_fn_ext.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_format.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_format.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_loadpath.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_loadpath.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_pack.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_pack.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_qsort.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_qsort.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mf_arr_appstr.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mf_arr_appstr.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(mulalloc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(mulalloc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_access.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_access.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_alloc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_alloc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_compress.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_compress.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_div.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_div.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_error.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_error.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_fopen.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_fopen.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_fstream.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_fstream.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_getwd.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_getwd.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_init.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_init.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_lib.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_lib.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_malloc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_malloc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_messnc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_messnc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_once.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_once.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_open.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_open.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_pthread.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_pthread.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_read.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_read.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_realloc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_realloc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_static.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_static.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_symlink.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_symlink.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_thr_init.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_thr_init.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_wincond.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_wincond.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_winerr.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_winerr.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_winfile.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_winfile.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(sha1.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(sha1.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(typelib.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(typelib.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_rnd.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_rnd.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(bchange.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(bchange.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(bmove_upp.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(bmove_upp.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-big5.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-big5.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-bin.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-bin.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-cp932.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-cp932.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-czech.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-czech.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-euc_kr.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-euc_kr.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-eucjpms.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-eucjpms.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-extra.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-extra.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-gb2312.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-gb2312.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-gbk.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-gbk.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-latin1.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-latin1.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-mb.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-mb.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-simple.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-simple.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-sjis.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-sjis.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-tis620.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-tis620.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-uca.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-uca.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-ucs2.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-ucs2.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-ujis.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-ujis.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-utf8.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-utf8.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype-win1250ch.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype-win1250ch.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(ctype.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(ctype.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(dtoa.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(dtoa.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(int2str.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(int2str.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(is_prefix.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(is_prefix.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(longlong2str.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(longlong2str.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_strtoll10.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_strtoll10.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(my_vsnprintf.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(my_vsnprintf.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(str2int.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(str2int.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(str_alloc.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(str_alloc.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strcend.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strcend.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strend.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strend.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strmake.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strmake.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strmov.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strmov.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strnmov.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strnmov.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strxmov.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strxmov.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(strxnmov.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(strxnmov.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(xml.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(xml.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(vio.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(vio.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(viosocket.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(viosocket.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(viossl.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(viossl.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+     1>mysqlclient.lib(viosslfactories.obj) : warning LNK4099: PDB 'mysqlclient.pdb' was not found with 'mysqlclient.lib(viosslfactories.obj)' or at 'H:\moonProject\moon\serverRun\mysqlclient.pdb'; linking object as if no debug info
+         iocpExample2.vcxproj -> H:\moonProject\moon\moon\../serverRun\moon.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../serverRun\moon.exe;#1" /manifest x64\Debug\moon.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\moon.unsuccessfulbuild".
+         Touching "x64\Debug\moon.lastbuildstate".
+     1>Done Building Project "H:\moonProject\moon\moon\iocpExample2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.91

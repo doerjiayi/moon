@@ -1,0 +1,259 @@
+ 
+namespace common
+{
+	/************************************
+	* ϵͳƽ̨����
+	***********************************/
+	enum PlatformType
+	{
+		ptPC = 1,//PCƽ̨
+		ptiPhone = 2,//iPhone
+		ptiPad = 3,//iPad
+		ptAndroidPhone = 4,//Android Phone
+		ptAndroidPad = 5,//Android Pad
+		ptWinPhone = 6,//Windows Mobile Phone
+		ptWinPad = 7,//Windows Mobile Pad
+	};
+
+	/************************************
+	* ��Ϸ�������Ͷ���
+	***********************************/
+	enum AttributeType
+	{
+		aNull = 0,
+		/* ������ */
+		aBiLi		= 1,//����			BL
+		aLingQiao	= 2,//����			LQ
+		aTiPo		= 3,//����			TP
+		aNeiXi		= 4,//��Ϣ			NX
+		aGangQi		= 5,//���			GQ
+		/* ������� */
+		aWaiGong	= 6,//�⹦			WG
+		aNeiGong	= 7,//�ڹ�			NG
+		aWaiFang	= 8,//���			WF
+		aNeiFang	= 9,//���			NF
+		aWaiFangCT	= 10,//�����͸		WT
+		aNeiFangCT	= 11,//�ڷ���͸		NT
+		aQiXue		= 12,//��Ѫ			QX
+		aNeiLi		= 13,//����			NL
+		aWaiBao		= 14,//�Ⱪ��			WB
+		aNeiBao		= 15,//�ڱ���			NB
+		aKangWaiBao	= 16,//���Ⱪ			KW
+		aKangNeiBao	= 17,//���ڱ�			KN
+		aMingZhong	= 18,//����			MZ
+		aShanBi		= 19,//����			SB
+		aHitSpeed	= 20,//�����ٶ�		HS
+		aMoveSpeed	= 21,//�ƶ��ٶ�		MS
+		aQiXueHuiFu	= 22,//��Ѫ�ָ��ٶ�	QH
+		aNeiLiHuiFu	= 23,//�����ָ��ٶ�	NH
+		aFuYuan		= 24,//��Ե			FY
+
+		AttributeCount,//�Զ������������
+	};
+
+	/************************************
+	* ��Ϸ���Զ���
+	***********************************/
+	struct Attribute
+	{
+		unsigned char type;
+		unsigned char reserve[3];
+		int value;
+	};
+
+	/************************************
+	* ��Ϸ��Ʒ���Ͷ���
+	***********************************/
+	enum StdItemType
+	{
+		/* ���װ�� */
+		iDress = 1,//�·�
+		iPants = 2,//����
+		iHat = 3,//ñ��
+		iBoot = 4,//Ь��
+		iQuest = 5,//������Ʒ
+	};
+
+	//��ɫλ����Ϣ
+	struct EntityPosition
+	{
+		uint64	nDuplicateId;		//���ڸ���ID
+		uint32	nSceneId;			//���ڳ���ID
+		uint32	nMapX;				//x���
+		uint32	nMapY;				//y���
+	};
+
+	//�����������
+	enum AttackPowerType
+	{
+		apOuter = 0,//�⹦
+		apInner = 1,//�ڹ�
+	};
+
+	/* ��Ϸ��ɫ��Ʒ��ݽṹ */
+	struct UserItem
+	{
+	public:
+		ItemSeries series;//��ƷΨһϵ�к�
+		unsigned short wItemId;//��ƷID
+		unsigned char btStrong;//��Ʒǿ���ȼ�
+		unsigned char btQuality;//��ƷƷ�ʵȼ�
+		unsigned short InlayItems[MaxItemHole];//��Ƕ��
+		int nExpireTime;//��Ʒ����ʱ�䣬Ϊ0��ʾ��������
+		unsigned char btCount;//��Ʒ����
+		unsigned char btFlag;//��Ʒ��־
+		unsigned char btReserve[2];
+
+	public:
+		//��ȡ��Ƕ���Ƿ���
+		bool getIsHoleOpend(int index) const;
+		 
+		//������ر���Ƕ��
+		void openHole(int index, bool boOpen);
+  
+		//��ȡ��������Ƕ������
+		int getOpendHoleCount() const;
+		 
+		//��ȡ�ض���Ƕ����Ƕ����ƷID
+		int getInlayedItem(int index) const;
+  
+		//�����ض���Ƕ����Ƕ��ID
+		void setInlayedItem(int index, int wItemId);
+		 
+		//�ж���Ʒ�Ƿ��
+		bool binded() const;
+  
+		//������Ʒ�Ƿ��
+		void setBind(bool boBind);
+		  
+	};
+	
+	/************************************
+	* ��ɫ������Ϣ
+	***********************************/
+#pragma pack (push, 1)
+	struct EntityDesc
+	{
+		//��ɫ״̬���
+		enum EntityFlag
+		{
+			efDead = 0x00000001,//��ɫ�������
+		};
+
+		unsigned char race;//��ɫ���ͣ�0��ʾ���
+		unsigned char genob;//0x0F��ʾְҵ,0xF0��ʾ�Ա�0��1Ů��
+		unsigned short level;//��ɫ�ȼ�
+		unsigned short body;//�������α��
+		unsigned short weapon;//�������α��,��ΪNPC���ʾ��Ӧ������״̬
+		unsigned short wpeffect;//������Ч���
+		unsigned short mount;//�������α��
+		unsigned short moveSpeed;//�ƶ��ٶȣ�px/s
+		short hitSpeedRate;//�����ٶȱ��ʣ�1��ʾ�ӿ�ǧ��֮һ����-1��ʾ����ǧ��֮һ��
+		unsigned int flags;//��ɫ���ܱ�Ǳ�
+		unsigned char vipLevel;//VIP�ȼ�
+		unsigned char reserve[3];
+	};
+#pragma pack (pop)
+	/************************************
+	* ��ɫ����������Ϣ
+	************************************/
+#pragma pack (push, 1)
+	struct PlayerQuestData
+	{
+		unsigned short	questID;		//����ID
+		unsigned char	completeTimes;	//����ɴ���
+		unsigned char	targetCount;	//�������
+		unsigned int	endTime;		//����ʱ��,0��ʾû������
+		unsigned char	target[4];		//ÿ������������������
+	};
+	struct PlayerDoneQuestData
+	{
+		unsigned char	mask;			//����Ƿ����������������:0��,1��
+		unsigned short	questID;		//����ID
+	};
+#pragma pack (pop)
+
+	/************************************
+	* ��ɫ����ϵͳ��Ϣ
+	************************************/
+	//��������
+	enum BeadType
+	{
+		beNone   = 0,//û������
+		beNormal = 1,//��ͨ
+		beIce	 = 2,//��
+		beFire	 = 3,//��
+		beElec	 = 4,//��
+		beDrug	 = 5,//��
+	};
+	enum BlowHoleState
+	{
+		bhsNone   = 0,//û��״̬
+		bhsLock   = 1,//δ����
+		bhsUnLock = 2,//�ɿ���
+		bhsOpen   = 3,//�ѿ���δ������
+		bhsNest   = 4,//�ѿ����ѷ�����
+	};
+	//��������
+	struct Bead
+	{
+		BeadSeries series;//����Ψһϵ�к�
+		unsigned short beadId;//����ID
+		unsigned short addSoulEater;//�����ɻ�ֵ
+		unsigned int exp;//����ֵ
+		Attribute baseAttr;//������
+		Attribute addAttr;//��������
+		unsigned int elementRatio;//Ԫ��ϵ��
+		unsigned char level;//����ȼ�
+		unsigned char reserve[3];//����
+	};
+	//����
+ 
+	struct Weapon
+	{
+		unsigned char weaponId;//����ID
+		unsigned char level;//�����ȼ�
+		unsigned short soulEater;//�ɻ�ֵ
+		unsigned int eternalValue;//���ֵ
+		unsigned int maxEternalValue;//������ֵ
+		Attribute baseAttr;//������
+		BeadSeries holeBeads[MAX_WEAPON_HOLES];//����ϵ�����ϵ�к� û����Ϊ0
+		unsigned char holeState[MAX_WEAPON_HOLES];//���״̬
+		unsigned char reserve;//����
+	};
+
+	/************************************
+   * ������Ʒ��Ϣ
+	************************************/
+#pragma pack (push, 1)
+	struct DropItemData
+	{
+		ItemSeries series;//��Ʒϵ�к�
+		PlayerId ownerId;//��Ʒ�����ߣ�0��ʾ�޹�����
+		int serverIdent;//��������־
+		unsigned int expireTime;//��Ʒ��ʧʱ�䣬CMinidateTime����
+		short itemId;//��ƷID
+		unsigned char quality;//Ʒ�ʵȼ�
+		unsigned char strong;//ǿ���ȼ�
+		int itemCount;//��Ʒ����
+	};
+#pragma pack (pop)
+
+	/************************************
+	* ��ͻ��˷��͵ĵ�����Ʒ
+	************************************/
+#pragma pack (push, 1)
+	struct SendClientDropItem
+	{
+		ItemSeries series;//��Ʒϵ�к�
+		int serverIdent;//��������־
+		short itemId;//��ƷID
+		unsigned short itemCount;//��Ʒ����
+		unsigned char quality;//Ʒ�ʵȼ�
+		unsigned char strong;//ǿ���ȼ�
+		int x;//�����λ��X
+		int y;//�����λ��Y
+	};
+#pragma pack (pop)
+}
+ 

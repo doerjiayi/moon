@@ -1,0 +1,43 @@
+ 
+
+/*********************************
+* 玩家武器系统模块
+*********************************/
+
+
+class CPlayerWeapon: public CDoerUnit
+{
+public:
+	CPlayerWeapon();
+	~CPlayerWeapon();
+
+public:
+	virtual bool init();
+	virtual bool loadData(CDataPacketReader &data);
+	virtual void saveData(CDataPacket& data);
+	virtual void dispatchRecvPacket(int btCmd, CDataPacketReader &inPacket);
+	virtual void dispatchMsg(DoerMsg *msg);
+	virtual void offline();
+
+public:
+	//增加一个灵珠
+	void addBead(unsigned short beadId, unsigned char level);
+	//删除一个灵珠
+	void delBead(BeadSeries serires);
+	//查找一个灵珠
+	Bead* findBead(BeadSeries serires);
+	//清空武器信息
+	void clearWeaponInfo();
+	//清空灵珠列表
+	void clearBeadList();
+
+	void sendWeaponFullInfo();
+	void sendWeaponInfo();
+	void sendAddBead(Bead* pBead);
+	void sendDelBead(BeadSeries series);
+	void sendBeadEat(Bead* pMainBead, std::vector<BeadSeries> attachSerieses);
+	void sendWeaponOperateRes(unsigned char op, unsigned char res);
+public:
+	Weapon m_Weapon;//武器
+	 
+}; 

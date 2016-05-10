@@ -1,0 +1,36 @@
+moonServer = 
+{
+	--应用服务器配置
+	server = 
+	{
+		--[[address=服务监听地址，port=服务监听端口]]
+		id = 0, name = "月亮",
+	},
+	--应用账号数据库配置
+	accountdb = 
+	{
+		--[[host=数据库地址，port=数据库端口，dbname=数据库名称，user=用户数据库登陆名称，passwd=数据库登陆密码]]
+		host = "127.0.0.1", port = 3306, dbname = "moonaccdb", user = "root", passwd = "123456",
+	},
+	--游戏日志据库配置
+	gamelogdb = 
+	{
+		--[[host=数据库地址，port=数据库端口，dbname=数据库名称，user=游戏数据库登陆名称，passwd=数据库登陆密码]]
+		host = "127.0.0.1", port = 3306, dbname = "moonlogdb", user = "root", passwd = "123456",
+	},
+	--应用DBManager配置
+	dbclient = 
+	{
+		--[[host=DB服务器地址，port=DB服务器端口]]
+		host = "127.0.0.1", port = 6100,
+	},
+	--网关配置
+	gate = 
+	{	
+		--[[一下3行表示配置3个网关]]
+		--[[address=网关监听地址，port=绑定端口，send=发送线程数量，name=网关名称]]
+		{address = "0.0.0.0", port = 6000, send = 2, name = "gate1",},
+		--{address = "0.0.0.0", port = 6001, send = 2, name = "gate2",},
+		--{address = "0.0.0.0", port = 6002, send = 2, name = "gate3",},
+	},
+}
